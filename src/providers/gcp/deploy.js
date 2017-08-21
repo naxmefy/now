@@ -2,7 +2,6 @@
 
 // Packages
 const ms = require('ms')
-const fetch = require('node-fetch')
 const mri = require('mri')
 const { gray, bold } = require('chalk')
 const uid = require('uid-promise')
@@ -11,6 +10,7 @@ const sleep = require('then-sleep')
 const debug = require('debug')('now:gcp:deploy')
 
 // Utilities
+const fetch = require('../../../lib/fetch')
 const ok = require('../../util/output/ok')
 const info = require('../../util/output/info')
 const wait = require('../../util/output/wait')

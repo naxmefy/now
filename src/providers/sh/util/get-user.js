@@ -1,8 +1,8 @@
 // theirs
-const fetch = require('node-fetch')
 const debug = require('debug')('now:sh:get-user')
 
 // ours
+const fetch = require('../../../../lib/fetch')
 const error = require('../../../util/output/error')
 
 const getUser = async ({ apiUrl, token }) => {

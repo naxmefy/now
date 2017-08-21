@@ -2,7 +2,7 @@
 const { encode: encodeQuery } = require('querystring')
 
 // theirs
-const _fetch = require('node-fetch')
+const _fetch = require('../../../../lib/fetch')
 
 const fetch = async ({ url, method = 'GET', token, query }) => {
   url = query ? url + '?' + encodeQuery(query) : url

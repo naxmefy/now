@@ -2,10 +2,10 @@
 const { stringify: formUrlEncode } = require('querystring')
 
 // theirs
-const fetch = require('node-fetch')
 const debug = require('debug')('now:gcp:get_token')
 
 // ours
+const fetch = require('../../../../lib/fetch')
 const saveCredentials = require('./save-credentials')
 const error = require('../../../util/output/error')
 const cmd = require('../../../util/output/cmd')

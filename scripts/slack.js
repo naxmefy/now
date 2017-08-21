@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const slackup = require('slackup')
-const fetch = require('node-fetch')
+const fetch = require('../lib/fetch')
 
 const repo = process.env.TRAVIS_REPO_SLUG
 const commit = process.env.TRAVIS_COMMIT

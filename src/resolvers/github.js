@@ -1,7 +1,6 @@
 //@flow
 const { tmpdir } = require('os')
 const { parse, format } = require('url')
-const fetch = require('node-fetch')
 const tar = require('tar-fs')
 const pipeStreams = require('pipe-streams-to-promise')
 const { mkdir } = require('fs-extra')
@@ -9,6 +8,9 @@ const uid = require('uid-promise')
 const { createGunzip } = require('zlib')
 const { join } = require('path')
 const debug = require('debug')('now:resolvers:github')
+
+// ours
+const fetch = require('../../lib/fetch')
 
 // matches a parameter that can be `now`d like zeit/now#master
 const DEPLOY_PARAM_REGEX = /^([\w-]+)\/([\w-]+)(#\w+)?$/

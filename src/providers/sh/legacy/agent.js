@@ -4,7 +4,7 @@ const http = require('http')
 const https = require('https')
 
 // Packages
-const fetch = require('node-fetch')
+const fetch = require('../../../../lib/fetch')
 
 /**
  * Returns a `fetch` version with a similar

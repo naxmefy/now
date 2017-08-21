@@ -8,10 +8,10 @@ import zlib from 'zlib'
 
 // Packages
 import onDeath from 'death'
-import fetch from 'node-fetch'
 import retry from 'async-retry'
 
 // Utilities
+import fetch from '../../lib/fetch'
 import plusxSync from './chmod'
 import {
   disableProgress,
@@ -21,7 +21,7 @@ import {
   warn
 } from './log'
 
-fetch.Promise = Promise
+fetch.originalFetch.Promise = Promise
 global.Promise = Promise
 let { platform } = process
 if (detectAlpine()) platform = 'alpine'

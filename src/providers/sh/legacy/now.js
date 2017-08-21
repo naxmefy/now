@@ -6,7 +6,6 @@ const qs = require('querystring')
 const { parse: parseUrl } = require('url')
 
 // Packages
-const fetch = require('node-fetch')
 const bytes = require('bytes')
 const chalk = require('chalk')
 const resumer = require('resumer')
@@ -17,6 +16,7 @@ const { readFile, stat, lstat } = require('fs-extra')
 const ms = require('ms')
 
 // Utilities
+const fetch = require('../../../../lib/fetch')
 const {
   staticFiles: getFiles,
   npm: getNpmFiles,

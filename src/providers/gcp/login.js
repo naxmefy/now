@@ -5,10 +5,10 @@ const { createServer } = require('http')
 
 // theirs
 const opn = require('opn')
-const fetch = require('node-fetch')
 const debug = require('debug')('now:gcp:login')
 
 // ours
+const fetch = require('../../../lib/fetch')
 const error = require('../../util/output/error')
 const aborted = require('../../util/output/aborted')
 const info = require('../../util/output/info')

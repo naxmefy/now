@@ -3,13 +3,13 @@ const { stringify: stringifyQuery } = require('querystring')
 const { platform, arch, hostname } = require('os')
 
 // theirs
-const fetch = require('node-fetch')
 const debug = require('debug')('now:sh:login')
 const promptEmail = require('email-prompt')
 const ms = require('ms')
 const { validate: validateEmail } = require('email-validator')
 
 // ours
+const fetch = require('../../../lib/fetch')
 const { version } = require('./util/pkg')
 const ua = require('./util/ua')
 const error = require('../../util/output/error')
